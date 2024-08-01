@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.xiaoxiao.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AttributeFix"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

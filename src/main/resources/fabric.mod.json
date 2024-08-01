@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "yuehua",
+	"version": "${version}",
+	"name": "yuehua",
+	"description": "§6Mod for Yuehua",
+	"authors": [
+		"§cxiaoxiaoOWO"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/yuehua/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.xiaoxiao.Yuehua"
+		],
+		"client": [
+			"com.xiaoxiao.YuehuaClient"
+		]
+	},
+	"mixins": [
+		"yuehua.mixins.json",
+		{
+			"config": "yuehua.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
